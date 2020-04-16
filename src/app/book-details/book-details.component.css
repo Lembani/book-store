@@ -1,0 +1,13 @@
+
+.bkListHead {
+  text-align: center;
+}
+.bkList {
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative;
+  margin-bottom: 5px;
+}
+mat-card-actions {
+  text-align: center;
+}

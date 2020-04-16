@@ -7,7 +7,7 @@ export const books = [
   },
   {
     title: 'The Safest Place',
-    author: 'Mary Curie',
+    author: 'Marie Curie',
     year: '2014',
     description: 'Adipisicing elit. Ipsa veritatis ab suscipit, obcaecati illum laboriosam dolorem. Consequatur necessitatibus.'
   },

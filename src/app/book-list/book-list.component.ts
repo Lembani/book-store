@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Output, EventEmitter } from '@angular/core';
 import { books } from '../books';
 
 @Component({
@@ -8,10 +9,12 @@ import { books } from '../books';
 })
 export class BookListComponent implements OnInit {
   books = books;
+  @Output() showDetail = new EventEmitter();
 
   constructor() { }
 
   ngOnInit() {
   }
+
 
 }

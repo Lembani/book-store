@@ -1,6 +1,17 @@
-<mat-list>
-  <h2>Books</h2>
-  <mat-list-item class="bookList" *ngFor="let book of books">
-    <a [title]="book.title + ' details'"> {{ book.title }} </a>
-  </mat-list-item>
-</mat-list>
+<h2 class="bkListHead">Books</h2>
+<mat-card class="bkList" *ngFor="let book of books; index as bookId">
+  <mat-card-header>
+    <mat-card-title>
+      Title: {{ book.title }}
+    </mat-card-title>
+    <mat-card-subtitle>
+      Author: {{ book.author }}
+    </mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <p>Description: {{ book.description }}</p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-raised-button color="primary" [routerLink]="['/books', bookId]">Show Details</button>
+  </mat-card-actions>
+</mat-card>
