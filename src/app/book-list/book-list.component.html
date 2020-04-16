@@ -1,0 +1,6 @@
+<mat-list>
+  <h2>Books</h2>
+  <mat-list-item class="bookList" *ngFor="let book of books">
+    <a [title]="book.title + ' details'"> {{ book.title }} </a>
+  </mat-list-item>
+</mat-list>
