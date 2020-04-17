@@ -4,3 +4,7 @@ mat-toolbar {
 .mid-space {
   flex: 1 1 auto;
 }
+.homeLink {
+  text-decoration: none;
+  color: #000000;
+}
